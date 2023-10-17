@@ -1,0 +1,30 @@
+[user]
+	name = waonpad
+	mail = waonpad@gmail.com
+	email = waonpad@gmail.com
+[safe]
+	directory = %(prefix)///wsl$/Ubuntu/home/waonpad/docker-projects/WordlePortal
+[core]
+	ignorecase = true
+	autocrlf = false
+[credential "https://git.heroku.com"]
+	provider = generic
+
+[alias]
+	a = add
+	co = checkout
+	cob = checkout -b
+	com = checkout main
+	c = commit -m
+	s = status
+	br = branch
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	type = cat-file -t
+	dump = cat-file -p
+	p = push
+	poh = push origin HEAD
+	pl = pull
+	plom = pull origin main
+
+  # エイリアス一覧
+  alias = !git config --get-regexp '^alias\\.' | sed 's/alias\\.\\([^ ]*\\) \\(.*\\)/\\1\\\t => \\2/' | sort
