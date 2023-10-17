@@ -1,15 +1,3 @@
-[user]
-	name = waonpad
-	mail = waonpad@gmail.com
-	email = waonpad@gmail.com
-[safe]
-	directory = %(prefix)///wsl$/Ubuntu/home/waonpad/docker-projects/WordlePortal
-[core]
-	ignorecase = true
-	autocrlf = false
-[credential "https://git.heroku.com"]
-	provider = generic
-
 [alias]
 	a = add
 	co = checkout
